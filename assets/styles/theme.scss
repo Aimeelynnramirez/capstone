@@ -21,13 +21,13 @@ p {
   width:75%;
 }
 
-.nav {
-  @include make-row();
-  margin-left: 75%;
-  .nav-button {
-    @include make-lg-column(3);
-    @include make-md-column(3);
-    @include make-sm-column(3);
-    @include make-xs-column(3);
-  }
-}
+// .nav {
+//   @include make-row();
+//   margin-left: 75%;
+//   .nav-button {
+//     @include make-lg-column(3);
+//     @include make-md-column(3);
+//     @include make-sm-column(3);
+//     @include make-xs-column(3);
+//   }
+// }
