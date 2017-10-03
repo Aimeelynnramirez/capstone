@@ -1,13 +1,13 @@
 'use strict';
 
 const app = require('../app.js');
-$('#posts').hide();
+$('.board').hide();
+
 $('#change-password').hide();
 $('#sign-out').hide();
 const success = (data) => {
   if (data) {
-    $('#posts').hide();
-    $('#change-password').show();
+
 
     console.log(data);
   } else {
@@ -19,7 +19,7 @@ const success = (data) => {
 
 const failure = (error) => {
   console.error(error);
-  $('#change-password').text('Try again ' + data.user.email + '!')
+  // $('#change-password').text('Try again ' + data.user.email + '!')
 
 };
 
@@ -27,8 +27,7 @@ const signInSuccess = (data) => {
   app.user = data.user;
   console.log('this Success')
   $('#login-prompt').text('Welcome ' + data.user.email + '!')
-  $('#change-password').show();
-  $('#posts').show();
+  $('.board').show();
   $('#sign-in').hide();
   $('#sign-out').show();
   $('#sign-up').hide();
@@ -38,7 +37,6 @@ const signInSuccess = (data) => {
 
 const signUpSuccess = (data) => {
   app.user = data.user;
-  $('#posts').show();
 
   console.log(app.user);
 };

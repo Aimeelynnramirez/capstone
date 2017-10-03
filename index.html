@@ -19,8 +19,22 @@
           <div  class="container-fluid">
 
           <h1> {Root}.ed</h1>
+        <div class="logo">Agenda</div>
+        <div id="login-prompt"></div>
+
+          <div class = "board">
+
+              <h3> Pinterest</h3>
+              <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/aimeelramirez/board/"></a>
+              <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/street-style/"></a>
+
+              <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/official-news/"></a>
+              <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
+
+      </div>
           <article>
-          <form id="sign-up">
+
+  <form id="sign-up">
     <fieldset>
 
         <legend>Sign up!</legend>
@@ -32,61 +46,45 @@
         <input type="submit" name="submit" value="Sign up!" class="btn-large">
     </fieldset>
   </form>
-  </div>
 
-  <form id="sign-in">
-    <fieldset>
-      <!-- <div class="container row s12"> -->
-        <legend>Sign In!</legend>
-        <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
-        <label for="email" data-error="wrong" data-success="right">Email</label>
-        <input type="password" name="credentials[password]" placeholder="Password">
-        <input type="submit" name="submit" value="Sign In" class="btn-large">
-    </fieldset>
-  </form>
-<!-- <div class="divider"></div> -->
-  </div>
-  <!-- <form id="change-password"> -->
-    <fieldset>
-          <input id= ="change-password">
-        <legend>Change Password!</legend>
-        <input type="password" name="passwords[old]" placeholder="Current Password">
-        <input type="password" name="passwords[new]" placeholder="New Password">
-        <input type="submit" name="submit" value="Change Password" class="btn-large">
-    </fieldset>
-  </form>
-  </div>
-    <!-- <div class="divider"></div> -->
   <form id="sign-out">
-    <div class="container  teal darken-4 hoverable">
       <fieldset>
         <legend>Sign Out!</legend>
         <form method="get" action="/sign-out">
           <button type="sign-out" name="submit" value="sign-out" class="btn-large" onclick="history.go(0)" /> Sign-out </button>
       </fieldset>
       </form>
+  <div class="divider"><h3>Already a Member?</h3></div>
+
+  <form id="sign-in">
+    <fieldset>
+      <!-- <div class="container row s12"> -->
+        <legend> Sign-In</legend>
+        <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+        <label for="email" data-error="wrong" data-success="right">Email</label>
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="submit" name="submit" value="Sign In" class="btn-large">
+    </fieldset>
+  </form>
+  <!-- <form id="change-password"> -->
+
+        <form id= ="change-password">
+  <fieldset>
+        <legend>Change Password!</legend>
+        <input type="password" name="passwords[old]" placeholder="Current Password">
+        <input type="password" name="passwords[new]" placeholder="New Password">
+        <input type="submit" name="submit" value="Change Password" class="btn-large">
+    </fieldset>
+  </form>
+
+    <!-- <div class="divider"></div> -->
 
 </article>
-    <div class = "board">
 
-        <h3> Pinterest</h3>
-        <a data-pin-do="embedBoard" data-pin-board-width="300" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/aimeelramirez/board/"></a>
-        <a data-pin-do="embedBoard" data-pin-board-width="300" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/street-style/"></a>
 
-        <a data-pin-do="embedBoard" data-pin-board-width="300" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/official-news/"></a>
-        <a data-pin-do="embedBoard" data-pin-board-width="300" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
-
-</div>
-
-      <h1>Information</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.</p>
-
+      <h1>Information:</h1>
+<h3>Currently Under Construction.</h3>
+<p>Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.Currently Under Construction.
+  Currently Under Construction.Currently Under Construction.</p>
     </body>
 </html>

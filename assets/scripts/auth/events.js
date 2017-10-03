@@ -35,7 +35,6 @@ const onChangePassword = (event) => {
   .then(ui.success)
   .catch(ui.failure);
 };
-
 const addHandlers = () => {
   $('#sign-up').on('submit', onSignUp);
   $('#sign-in').on('submit', onSignIn);
