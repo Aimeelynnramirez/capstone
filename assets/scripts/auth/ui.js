@@ -20,7 +20,7 @@ const success = (data) => {
 const failure = (error) => {
   console.error(error);
   // $('#change-password').text('Try again ' + data.user.email + '!')
-
+//get a place for hide change-password
 };
 
 const signInSuccess = (data) => {
@@ -34,13 +34,13 @@ const signInSuccess = (data) => {
   $('#sign-up').hide();
   $('#sign-in').hide();
 
-  console.log(app.user);
+  // console.log(app.user);
 };
 
 const signUpSuccess = (data) => {
   app.user = data.user;
 
-  console.log(app.user);
+  // console.log(app.user);
 };
 const signOutSuccess = () => {
   console.log('User signed out successfully');
