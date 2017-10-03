@@ -2,7 +2,7 @@
 
 const app = require('../app.js');
 $('.board').hide();
-$('.quotes').hide();
+  $('.quotes').hide();
 $('#change-password').hide();
 $('#sign-out').hide();
 const success = (data) => {
@@ -10,7 +10,6 @@ const success = (data) => {
 
 
     console.log(data);
-
   } else {
     console.log('Success');
     $('.welcome').text('Welcome ' + data.user + '!')
@@ -20,11 +19,13 @@ const success = (data) => {
 
 const failure = (error) => {
   console.error(error);
+  $('.welcome').text('please'+ '' + ' re-enter')
 //get a place for hide change-password
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
+  console.log('this Success')
   $('.welcome').text('Welcome ' + data.user + '!')
   $('.board').show();
   $('.logo').hide();

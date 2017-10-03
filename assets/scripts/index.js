@@ -3,12 +3,10 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const authEvents = require('./auth/events.js');
-const postsEvents = require('./posts/events.js');
 
 $(() => {
   setAPIOrigin(location, config)
   authEvents.addHandlers();
-  postsEvents.addHandlers();
 
 })
 
