@@ -12,7 +12,7 @@ const success = (data) => {
     console.log(data);
   } else {
     console.log('Success');
-    $('#login-prompt').text('Welcome ' + data.user.email + '!')
+    $('#login-prompt').text('Welcome ' + data.user + '!')
 
   }
 };
@@ -28,6 +28,7 @@ const signInSuccess = (data) => {
   console.log('this Success')
   $('#login-prompt').text('Welcome ' + data.user.email + '!')
   $('.board').show();
+  $('.logo').hide();
   $('#sign-in').hide();
   $('#sign-out').show();
   $('#sign-up').hide();
