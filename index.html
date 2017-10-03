@@ -10,11 +10,62 @@
       <!-- Do not add `script` tags unless you know what you are doing -->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+
 
         </head>
-            <body class="container-fluid">
+            <body >
+          <div  class="container-fluid">
+
           <h1> {Root}.ed</h1>
+          <article>
+          <form id="sign-up">
+    <fieldset>
+
+        <legend>Sign up!</legend>
+        <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+        <label for="email" data-error="wrong" data-success="right">Email</label>
+
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+        <input type="submit" name="submit" value="Sign up!" class="btn-large">
+    </fieldset>
+  </form>
+  </div>
+
+  <form id="sign-in">
+    <fieldset>
+      <!-- <div class="container row s12"> -->
+        <legend>Sign In!</legend>
+        <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+        <label for="email" data-error="wrong" data-success="right">Email</label>
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="submit" name="submit" value="Sign In" class="btn-large">
+    </fieldset>
+  </form>
+<!-- <div class="divider"></div> -->
+  </div>
+  <!-- <form id="change-password"> -->
+    <fieldset>
+      <div class="container col s6 teal darken-4 hoverable">
+        <legend>Change Password!</legend>
+        <input type="password" name="passwords[old]" placeholder="Current Password">
+        <input type="password" name="passwords[new]" placeholder="New Password">
+        <input type="submit" name="submit" value="Change Password" class="btn-large">
+    </fieldset>
+  </form>
+  </div>
+    <!-- <div class="divider"></div> -->
+  <form id="sign-out">
+    <div class="container  teal darken-4 hoverable">
+      <fieldset>
+        <legend>Sign Out!</legend>
+        <form method="get" action="/sign-out">
+          <button type="sign-out" name="submit" value="sign-out" class="btn-large" onclick="history.go(0)" /> Sign-out </button>
+      </fieldset>
+      </form>
+
+</article>
     <div class = "board">
 
         <h3> Pinterest</h3>
@@ -35,5 +86,7 @@
       velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.</p>
+
     </body>
 </html>
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>

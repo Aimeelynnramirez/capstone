@@ -1,0 +1,33 @@
+
+body {
+    background: url('http://i.imgur.com/Uup339g.jpg');
+    color:blue;
+
+  }
+fieldset {
+width:10px;
+  }
+  h1 {
+    position: center;
+  }
+  .container-fluid{
+    text-align:center;
+
+}
+
+p {
+  background: white;
+  text-align: center;
+  width:75%;
+}
+
+.nav {
+  @include make-row();
+  margin-left: 75%;
+  .nav-button {
+    @include make-lg-column(3);
+    @include make-md-column(3);
+    @include make-sm-column(3);
+    @include make-xs-column(3);
+  }
+}
