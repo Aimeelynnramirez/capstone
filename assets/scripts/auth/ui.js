@@ -26,7 +26,7 @@ const failure = (error) => {
 const signInSuccess = (data) => {
   app.user = data.user;
   console.log('this Success')
-  $('#login-prompt').text('Welcome ' + data.user.email + '!')
+  $('#login-prompt').text('Welcome ' + data.user + '!')
   $('.board').show();
   $('.logo').hide();
   $('#sign-in').hide();
