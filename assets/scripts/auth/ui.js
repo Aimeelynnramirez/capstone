@@ -2,7 +2,7 @@
 
 const app = require('../app.js');
 $('.board').hide();
-
+  $('.quotes').hide();
 $('#change-password').hide();
 $('#sign-out').hide();
 const success = (data) => {
@@ -12,24 +12,25 @@ const success = (data) => {
     console.log(data);
   } else {
     console.log('Success');
-    $('#login-prompt').text('Welcome ' + data.user + '!')
+    $('.welcome').text('Welcome ' + data.user + '!')
 
   }
 };
 
 const failure = (error) => {
   console.error(error);
-  // $('#change-password').text('Try again ' + data.user.email + '!')
+  $('.welcome').text('please'+ '' + ' re-enter')
 //get a place for hide change-password
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
   console.log('this Success')
-  $('#login-prompt').text('Welcome ' + data.user + '!')
+  $('.welcome').text('Welcome ' + data.user + '!')
   $('.board').show();
   $('.logo').hide();
   $('#sign-in').hide();
+   $('.quotes').show();
   $('#sign-out').show();
   $('#sign-up').hide();
   $('#sign-in').hide();

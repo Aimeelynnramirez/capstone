@@ -1,6 +1,10 @@
 
 body {
     background: url('https://i.imgur.com/Uup339g.jpg');
+ width: 70%;
+max-width:600px;
+height:70%;
+max-height:600px;
     color: black;
     font-size: 14px;
 
@@ -9,9 +13,10 @@ body {
 .container-fluid {
 width:100%;
 }
-#welcome-prompt {
-  font-size: 20px;
-  }
+.welcome {
+  background: #68979b;
+  box-shadow: 1px 3px;
+}
   form {
     background: white;
     color:teal;
