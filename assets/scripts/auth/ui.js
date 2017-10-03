@@ -12,16 +12,20 @@ const success = (data) => {
     console.log(data);
   } else {
     console.log('Success');
+    $('#login-prompt').text('Welcome ' + data.user.email + '!')
+
   }
 };
 
 const failure = (error) => {
   console.error(error);
+  $('#login-prompt').text('Try again ' + data.user.email + '!')
+
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
-  console.log('ui.js signUpSuccess')
+  console.log('Success')
   $('#login-prompt').text('Welcome ' + data.user.email + '!')
   $('#change-password').show();
   $('#posts').show();
