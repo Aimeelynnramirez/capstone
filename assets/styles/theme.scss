@@ -12,7 +12,8 @@ width:100%;
   }
   form {
     background: white;
-    border:2px  black;
+    color:teal;
+    border:2px  teal;
     box-shadow: 1px 3px;
 
 
@@ -38,18 +39,24 @@ width:100%;
     text-align:center;
 
 }
+h4{
+  background: pink;
+  border:2px  teal;
+  box-shadow: 1px 3px;
+}
 
 p {
   text-align: center;
     background: white;
-    border:2px  black;
+    border:2px  teal;
     box-shadow: 1px 3px;
   width:100%;
 }
 
 .logo{
   background: url('https://i.imgur.com/5dPscuw.jpg');
-
+  border:2px  black;
+  box-shadow: 1px 3px;
   height:500px;
 
 }
