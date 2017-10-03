@@ -19,13 +19,13 @@ const success = (data) => {
 
 const failure = (error) => {
   console.error(error);
-  $('#login-prompt').text('Try again ' + data.user.email + '!')
+  $('#change-password').text('Try again ' + data.user.email + '!')
 
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
-  console.log('Success')
+  console.log('this Success')
   $('#login-prompt').text('Welcome ' + data.user.email + '!')
   $('#change-password').show();
   $('#posts').show();
