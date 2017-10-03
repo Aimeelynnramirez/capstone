@@ -32,6 +32,7 @@ const signInSuccess = (data) => {
   $('#sign-in').hide();
   $('#sign-out').show();
   $('#sign-up').hide();
+  $('#sign-in').hide();
 
   console.log(app.user);
 };
