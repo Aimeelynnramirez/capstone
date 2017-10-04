@@ -51,12 +51,15 @@ h1 {
   background: #68979b;
   box-shadow: 1px 3px;
 }
+h2{
+  text-align: center;
+  background: #68979b;
+}
 
 h3 {
   text-align: center;
   position: center;
-  background: #68979b;
-  box-shadow: 1px 3px;
+background: white;
 }
 
 .container-fluid {
@@ -87,10 +90,13 @@ p {
 }
 .posts{
   text-align: center;
+  background: white;
+
 }
 #postsContainer{
   text-align: center;
-  color:blue;
+  color:black;
+
 
 }
 // .nav {

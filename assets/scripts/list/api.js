@@ -11,17 +11,12 @@ const getPosts = function (data) {
     dataType: 'json',
     success: function (response, textStatus, jqXhr) {
       const posts = response.posts
-      console.log(posts.length)
-      let count = 0
+      console.log(posts)
       for (let i = 0; i < posts.length; i++) {
-        const title = posts[i].title
-        const body = posts[i].body
-        count++
-        if (count % 2 === 0) {
-          $('#posts').append('<div class="col-md-1"></div><div class= "posts">' + '<h3>' + title + '</h3><h3>'+ body + '</h3>' + '<br><br> <button type="button" class="btn  btn-lg center">Posts</button> '+ '</div>')
-        } else {
-          $('#posts').append('<div class="col-md-1"></div><div class= "posts">' + '<h3>' + title + '</h3><h3>' + body + '</h3>'+ '<br><br> <button type="button" class="btn  btn-lg center">Posts</button> '+ '</div>')
-        }
+        const title = JSON.stringify(posts[i].title)
+        const body = JSON.stringify(posts[i].body)
+        console.log(title + ' | ' + body)
+          $('.posts').append('<div>' + '<h2>' + title + '</h2><br><h3>' + body + '</h3>' + '<br><br> <button type="button" class="btn  btn-lg center">Posts</button> '+ '</div><br><br>')
       }
     }
   })

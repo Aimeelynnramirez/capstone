@@ -10,7 +10,7 @@ $(() => {
 //   list.forEach(function(posts){
 //   // Do some action.
 // });
-  $('#posts').on('load', postsEvents.getPosts())
+  postsEvents.getPosts()
 
   setAPIOrigin(location, config)
   authEvents.addHandlers();
