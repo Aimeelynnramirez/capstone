@@ -6,7 +6,7 @@ const config = require('../config.js')
 const getPosts = function (data) {
   return $.ajax({
     url: app.host + '/posts',
-    method: 'POST',
+    method: 'GET',
     contentType: 'application/json; charset=utf-8',
     dataType: 'json',
     success: function (response, textStatus, jqXhr) {
