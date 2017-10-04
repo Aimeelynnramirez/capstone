@@ -1,10 +1,10 @@
 'use strict';
 
 const app = require('../app.js');
-$('.board').hide();
-  $('.quotes').hide();
-$('#change-password').hide();
-$('#sign-out').hide();
+// $('.board').hide();
+//   $('.quotes').hide();
+// $('#change-password').hide();
+// $('#sign-out').hide();
 const success = (data) => {
   if (data) {
 
