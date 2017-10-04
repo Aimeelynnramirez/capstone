@@ -10,8 +10,17 @@ body {
 .row {
   width:50%;
 }
+.quotes{
+position: center;
+padding: 20% 40%;
+width:600px;
+max-width: 100%;
+}
 .container-fluid {
   max-width: 700px;
+}
+.board{
+  padding: 20% 40%;
 }
 
 .welcome {
@@ -75,6 +84,10 @@ p {
   height: 500px;
   width: 100%;
 
+}
+#postsContainer{
+  text-align: center;
+  color:blue;
 
 }
 // .nav {

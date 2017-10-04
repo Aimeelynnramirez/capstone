@@ -3,11 +3,14 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const authEvents = require('./auth/events.js');
-const postsEvents = require('./list/events.js');
+const postsEvents = require('./list/api.js');
 
 
 $(() => {
-  postsEvents.addPostHandlers();
+//   list.forEach(function(posts){
+//   // Do some action.
+// });
+  $('.postsBtn').on('load', postsEvents.getPosts())
 
   setAPIOrigin(location, config)
   authEvents.addHandlers();

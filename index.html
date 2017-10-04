@@ -17,11 +17,31 @@
 
 
         </head>
-            <body >
+            <body>
+
           <div class="container-fluid">
+            <!-- nav -->
+            <article>
+          <form id="sign-out">
+              <fieldset>
+                <legend>Sign Out!</legend>
+                <form method="get" action="/sign-out">
+                  <button type="sign-out" name="submit" value="sign-out" class="btn-large" onclick="history.go(0)" /> Sign-out </button>
+              </fieldset>
+              </form>
+            </article>
 
           <h1> {Root}.ED</h1>
-          <form id="posts">  <input type="submit" name="submit" value="posts" class="btn-large"></form>
+
+
+          <!-- <form method="get" action="/posts"> -->
+            <div class= "posts" id="postsContainer">
+              <div id="postsList" class="col-md-12"></div>
+            </div>
+
+                <!-- <fieldset>
+            <input type="submit" name="submit" value="posts" class="btn-large">
+          </fieldset></form></form> -->
 
           <h4>"The gardener rooted the plant in good soil." - Seed Good Words!</h4>
 
@@ -42,18 +62,12 @@
         <div class="welcome"></div>
 
         <div class = "quotes">
-          <a data-pin-do="embedBoard" data-pin-board-width="100%" data-pin-scale-height="100" data-pin-scale-width="500" href="https://www.pinterest.com/aimeelramirez/quotes/"></a>
+          quotes
+          <a data-pin-do="embedBoard" data-pin-board-width="1000" data-pin-scale-height="100" data-pin-scale-width="1000" href="https://www.pinterest.com/aimeelramirez/quotes/"></a>
         </div>
-          <article>
-        <form id="sign-out">
-            <fieldset>
-              <legend>Sign Out!</legend>
-              <form method="get" action="/sign-out">
-                <button type="sign-out" name="submit" value="sign-out" class="btn-large" onclick="history.go(0)" /> Sign-out </button>
-            </fieldset>
-            </form>
 
-          <div class = "board">
+
+  <div class = "board">
 
               <h3> Pinterest</h3>
               <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/aimeelramirez/board/"></a>
@@ -61,7 +75,11 @@
 
               <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/official-news/"></a>
               <a data-pin-do="embedBoard" data-pin-board-width="25%" data-pin-scale-height="100" data-pin-scale-width="100" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
+</div>
 
+
+
+<article>
 <h3 id="sign-up">New Member?
 
   <form id="sign-up">
