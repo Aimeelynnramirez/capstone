@@ -8,52 +8,56 @@ body {
   font-size: 14px;
 }
 .row {
-  width:50%;
+  text-align: center;
+
 }
 .quotes{
 position: center;
-
-width:600px;
+width:700px;
 max-width: 100%;
 }
 .container-fluid {
   max-width: 700px;
 }
 .board{
-text-align: center;
+  text-align: center;
+
 }
 
 .welcome {
   background: #68979b;
+  font-size:14px;
   box-shadow: 1px 3px;
 }
 .side {
-  background: url('https://i.imgur.com/5dPscuw.jpg');
-color:purple;
+    background: url('https://i.imgur.com/5dPscuw.jpg');
+    color:purple;
     text-align: center;
     box-shadow: 1px 3px solid black;
     height: 500px;
     width: 70%;
-    margin-left:50%;
-    padding: 20% 10%;
+    margin-left:15%;
+    padding: 5%;
 }
 
 form {
   background: white;
-  color: teal;
-  border: 2px teal;
+  box-shadow: 1px 3px solid black;
+
+
   box-shadow: 1px 3px;
 }
 
 h1 {
   text-align: center;
   position: center;
-  background: #68979b;
+  background: white;
+  border: 2px black;
   box-shadow: 1px 3px;
 }
 h2{
   text-align: center;
-  background: #68979b;
+  background: white;
 }
 
 h3 {
@@ -68,16 +72,15 @@ background: white;
 
 h4 {
   background: pink;
-  border: 2px teal;
+  border: 2px black;
   box-shadow: 1px 3px;
 }
 
 p {
   text-align: center;
   background: white;
-  border: 2px teal;
   box-shadow: 1px 3px;
-  width: 100%;
+
 }
 
 .logo {
@@ -97,7 +100,9 @@ p {
   text-align: center;
   color:black;
 
-
+}
+#sign-in {
+  width:100%;
 }
 // .nav {
 //   @include make-row();

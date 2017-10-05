@@ -1,45 +1,57 @@
 'use strict';
 
 const app = require('../app.js');
-// $('.board').hide();
-//   $('.quotes').hide();
-// $('#change-password').hide();
-// $('#sign-out').hide();
+// $('#posts').hide();
+$('#change-password').hide();
+$('#sign-out').hide();
+$('#postsContainer').hide();
+$('.board').hide();
+
 const success = (data) => {
   if (data) {
+    $('.welcome').text('Welcome!')
 
-
+    // $('#posts').hide();
+    // $('#change-password').show();
     console.log(data);
   } else {
     console.log('Success');
-    $('.welcome').text('Welcome ' + data.user + '!')
+    $('.welcome').text('Welcome' + data.user+ '!')
 
   }
 };
 
 const failure = (error) => {
+  $('.welcome').text('User name taken or password invaild')
   console.error(error);
-  $('.welcome').text('please'+ '' + ' re-enter')
-//get a place for hide change-password
 };
 
 const signInSuccess = (data) => {
   app.user = data.user;
-  console.log('this Success')
-  $('.welcome').text('Welcome ' + data.user + '!')
-  $('.board').show();
-  $('.logo').hide();
-  $('#sign-in').hide();
-   $('.quotes').show();
-  $('#sign-out').show();
+  console.log('Success')
   $('#sign-up').hide();
   $('#sign-in').hide();
+  $('#sign-out').show();
+  $('#postsContainer').show();
+  $('.board').show ();
+
+
+  // $('.welcome').text('Welcome ' + data.user.email + '!')
+  // $('#change-password').show();
+  // $('#posts').show();
+  // $('#sign-in').hide();
+  // $('#sign-out').show();
+  // $('#sign-up').hide();
 
   // console.log(app.user);
 };
 
 const signUpSuccess = (data) => {
   app.user = data.user;
+  $('.welcome').text('User name taken or password invaild')
+
+$('#sign-in').show();
+  // $('#posts').show();
 
   // console.log(app.user);
 };

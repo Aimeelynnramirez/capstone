@@ -12,11 +12,16 @@ $(() => {
 // });
   postsEvents.getPosts()
 
+  // postsEvents.makePosts()
+
   setAPIOrigin(location, config)
   authEvents.addHandlers();
 
 
+// add( String [, String] )
+
 })
+
 
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
