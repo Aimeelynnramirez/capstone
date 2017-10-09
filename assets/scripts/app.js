@@ -1,7 +1,7 @@
 'use strict';
 
 const app = {
-  host: 'https://backendcapstone.herokuapp.com',
+host: 'http://localhost:4741/'
 };
 
 module.exports = app;

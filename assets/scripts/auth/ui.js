@@ -6,6 +6,8 @@ $('#change-password').hide();
 $('#sign-out').hide();
 $('#postsContainer').hide();
 $('.board').hide();
+$('.comments').hide();
+
 
 const success = (data) => {
   if (data) {
@@ -15,8 +17,9 @@ const success = (data) => {
     // $('#change-password').show();
     console.log(data);
   } else {
+    $('.welcome').text('Welcome' + data.user + '!')
+
     console.log('Success');
-    $('.welcome').text('Welcome' + data.user+ '!')
 
   }
 };
@@ -28,12 +31,17 @@ const failure = (error) => {
 
 const signInSuccess = (data) => {
   app.user = data.user;
+  $('.welcome').text('Welcome home' + '' + data.user.email + '')
+
   console.log('Success')
   $('#sign-up').hide();
   $('#sign-in').hide();
   $('#sign-out').show();
   $('#postsContainer').show();
+  $('#posts').show()
+
   $('.board').show ();
+  $('.comments').show();
 
 
   // $('.welcome').text('Welcome ' + data.user.email + '!')
@@ -49,7 +57,7 @@ const signInSuccess = (data) => {
 const signUpSuccess = (data) => {
   app.user = data.user;
   $('.welcome').text('User name taken or password invaild')
-
+  // $('.comments').show();
 $('#sign-in').show();
   // $('#posts').show();
 

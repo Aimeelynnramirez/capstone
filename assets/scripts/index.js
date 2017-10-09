@@ -3,24 +3,36 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const authEvents = require('./auth/events.js');
-const postsEvents = require('./list/api.js');
+const forumEvents = require('./forum/api.js');
 
+
+const commentsEvents = require('./comment/api.js');
 
 $(() => {
-//   list.forEach(function(posts){
+//   forum.forEach(function(posts){
 //   // Do some action.
 // });
-  postsEvents.getPosts()
+
+// $('#posts').on('load', getPosts)
+
+    forumEvents.makePosts()
+      forumEvents.getPosts()
+
+
+
+  commentsEvents.getComments()
+
+
 
   // postsEvents.makePosts()
 
   setAPIOrigin(location, config)
   authEvents.addHandlers();
 
-
 // add( String [, String] )
 
 })
+
 
 
 // use require with a reference to bundle the file and use it in this file
@@ -28,3 +40,4 @@ $(() => {
 
 // use require without a reference to ensure a file is bundled
 require('./example')
+require('./forum/events.js');

@@ -2,7 +2,8 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://backendcapstone.herokuapp.com/'
+    production: 'http://localhost:4741/'
+    // production: 'https://backendcapstone.herokuapp.com/'
   }
 }
 

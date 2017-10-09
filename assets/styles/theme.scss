@@ -69,6 +69,13 @@ background: white;
 .container-fluid {
   text-align: center;
 }
+.comments {
+  text-align: center;
+  background: white;
+  border: 2px black;
+  box-shadow: 1px 3px;
+
+}
 
 h4 {
   background: pink;
@@ -94,6 +101,8 @@ p {
 .posts{
   text-align: center;
   background: white;
+  width:100%;
+
 
 }
 #postsContainer{
@@ -103,6 +112,10 @@ p {
 }
 #sign-in {
   width:100%;
+}
+#posts{
+  background:white;
+  color:teal;
 }
 // .nav {
 //   @include make-row();

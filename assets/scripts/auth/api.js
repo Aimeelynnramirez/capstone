@@ -1,6 +1,7 @@
 'use strict';
 
 const app = require('../app.js');
+const config = require('../config.js')
 
 const signUp = function (data) {
   return $.ajax({
