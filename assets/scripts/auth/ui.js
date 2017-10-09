@@ -5,6 +5,8 @@ const app = require('../app.js');
 $('#change-password').hide();
 $('#sign-out').hide();
 $('#postsContainer').hide();
+$('#posts').hide();
+
 $('.board').hide();
 $('.comments').hide();
 
@@ -18,6 +20,7 @@ const success = (data) => {
     console.log(data);
   } else {
     $('.welcome').text('Welcome' + data.user + '!')
+    $('#posts').show()
 
     console.log('Success');
 
@@ -31,7 +34,7 @@ const failure = (error) => {
 
 const signInSuccess = (data) => {
   app.user = data.user;
-  $('.welcome').text('Welcome home' + '' + data.user.email + '')
+  $('.welcome').text('Welcome home' + "" + data.user.email + '')
 
   console.log('Success')
   $('#sign-up').hide();
@@ -59,12 +62,15 @@ const signUpSuccess = (data) => {
   $('.welcome').text('User name taken or password invaild')
   // $('.comments').show();
 $('#sign-in').show();
+$('#posts').show()
+
   // $('#posts').show();
 
   // console.log(app.user);
 };
 const signOutSuccess = () => {
   console.log('User signed out successfully');
+  $('#posts').show()
 
   app.user = null;
 };

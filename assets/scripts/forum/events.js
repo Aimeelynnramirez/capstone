@@ -7,10 +7,12 @@ const postSubmit = $('#postSubmit').on('click', function() {
   // console.log(posts)
   let headerInput = $('#postHeader').val()
   let bodyInput = $('#postBody').val()
+  // let data ='{ "title":"' + headerInput +'", "body": "' + bodyInput + '"}'
   let data ='{ "title":"' + headerInput +'", "body": "' + bodyInput + '"}'
-  $('#posts').text(data).html()
-  var formData = JSON.stringify($('#posts').data());
-console.log('success ' + data )
+
+  $('.post').append( '<div> <h2>' + headerInput+ '</h2><br>'+ '<h3>' + bodyInput +'</h3>')
+  let formData = JSON.stringify($('.post').data())
+console.log('Success' + data + ""+ "|" + headerInput + "" + "|" + bodyInput)
 
 
 

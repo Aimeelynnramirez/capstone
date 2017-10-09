@@ -37,15 +37,14 @@ const makePosts = function (data) {
     success: function(response, data, jqXhr) {
       console.log(response + ' ' + data + ' ' + jqXhr)
 
-    //   const posts = response.posts
-    //   // console.log(posts)
-    //   for (let i = 0; i < posts.length; i++) {
-    //     var title = JSON.stringify(posts[i].title)
-    //     var body = JSON.stringify(posts[i].body)
-    //     $('#posts').push('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Posts</button> </div> <br><br>')
-    //   }
-    // }
-  }
+      const posts = response.posts
+      // console.log(posts)
+      for (let i = 0; i < posts.length; i++) {
+        var title = JSON.stringify(posts[i].title)
+        var body = JSON.stringify(posts[i].body)
+        $('.posts').push('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Posts</button> </div> <br><br>')
+      }
+    }
   })
 }
   //   }
