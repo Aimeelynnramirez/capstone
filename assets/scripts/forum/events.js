@@ -26,7 +26,7 @@ const postDelete = $('#postDelete').on('click', function() {
 
   // let data ='{ "title":"' + headerInput +'", "body": "' + bodyInput + '"}'
   const data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
-  $('.post').empty().prepend('<div> <h2>' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>')
+  $('.post').removeData().prepend('<div> <h2>' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>')
   $('.prompt').text(' deleted all').html()
 
   // $('.post').sort().remove()< deletes all instances after delete button
