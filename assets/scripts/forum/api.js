@@ -17,7 +17,7 @@ const getPosts = function (data) {
         var title = JSON.stringify(posts[i].title)
         var body = JSON.stringify(posts[i].body)
         // console.log(title + ' | ' + body)
-        $('.posts').append('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Posts</button> </div> <br><br>')
+        $('.posts').append('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Delete</button> </div> <br><br>')
       }
     }
   })
@@ -42,7 +42,27 @@ const makePosts = function (data) {
       for (let i = 0; i < posts.length; i++) {
         var title = JSON.stringify(posts[i].title)
         var body = JSON.stringify(posts[i].body)
-        $('.posts').push('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Posts</button> </div> <br><br>')
+        $('posts').push('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Delete</button> </div> <br><br>')
+      }
+    }
+  })
+}
+const deletePosts = function (data) {
+  return $.ajax({
+    url: app.host + '/posts',
+    method: 'DELETE',
+    contentType: 'application/json; charset=utf-8',
+    dataType: 'json',
+    data: data,
+    success: function(response, data, jqXhr) {
+      console.log(response + ' ' + data + ' ' + jqXhr)
+
+      const posts = response.posts
+      // console.log(posts)
+      for (let i = 0; i < posts.length; i++) {
+        var title = JSON.stringify(posts[i].title)
+        var body = JSON.stringify(posts[i].body)
+        $('posts').pop('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Delete</button> </div> <br><br>')
       }
     }
   })
@@ -54,5 +74,6 @@ const makePosts = function (data) {
 
          module.exports = {
           getPosts,
-          makePosts
+          makePosts,
+          deletePosts
         }
