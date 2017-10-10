@@ -5,6 +5,7 @@ const config = require('./config')
 const authEvents = require('./auth/events.js');
 const forumEvents = require('./forum/api.js');
 
+const forumEvent = require('./forum/events.js');
 
 const commentsEvents = require('./comment/api.js');
 
