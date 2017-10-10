@@ -12,6 +12,7 @@ $('.comments').hide();
 
 
 const success = (data) => {
+  postSubmit
   if (data) {
     $('.welcome').text('Welcome!')
 
@@ -34,7 +35,7 @@ const failure = (error) => {
 
 const signInSuccess = (data) => {
   app.user = data.user;
-  $('.welcome').text('Welcome home' + "" + data.user.email + '')
+  $('.welcome').text('Welcome ' + "" + data.user.email + '')
 
   console.log('Success')
   $('#sign-up').hide();
