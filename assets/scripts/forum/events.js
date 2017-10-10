@@ -16,8 +16,7 @@ const postSubmit = $('#postSubmit').on('click', function() {
   $('.prompt').text('successful post made').html()
 
 
-$('#postHeader').val('')
-$('#postBody').val('')
+
 
 })
 const postDelete = $('#postDelete').on('click', function() {
@@ -26,8 +25,16 @@ const postDelete = $('#postDelete').on('click', function() {
 
   // let data ='{ "title":"' + headerInput +'", "body": "' + bodyInput + '"}'
   const data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
+<<<<<<< HEAD
   $('.post').prepend('<div> <h2>' +'Header:'+ headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>').empty()
   $('.prompt').text(' deleted all').html()
+=======
+  $('.post').prepend('<div> <h2>' + headerInput + '</h2>' + '<h3>' + bodyInput + '</h3></div>')
+  $('.prompt').text('Saved on page on while all posts are deleted on DeleteAll').html()
+
+  $('.post').empty().prepend('<div> <h2>' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>')
+  $('.prompt').text(' deleted all but Input').html()
+>>>>>>> parent of 0cf7e596... editted bugs for input
 
   // $('.post').sort().remove()< deletes all instances after delete button
 
@@ -41,6 +48,7 @@ const postDelete = $('#postDelete').on('click', function() {
 
 
 })
+<<<<<<< HEAD
 
 // const postOneDelete = $('#postOneDelete').on('click', function() {
 //   let headerInput = $('#postHeader').val()
@@ -70,6 +78,8 @@ const postDelete = $('#postDelete').on('click', function() {
 
 
 
+=======
+>>>>>>> parent of 0cf7e596... editted bugs for input
 module.exports = {
   postDelete,
   postSubmit
