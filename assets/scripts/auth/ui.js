@@ -43,9 +43,11 @@ const signInSuccess = (data) => {
   $('#sign-out').show();
   $('#postsContainer').show();
   $('#posts').show()
+  $('.logo').hide()
+  $('.side').hide()
+  $('.comments').show();
 
   $('.board').show ();
-  $('.comments').show();
 
 
   // $('.welcome').text('Welcome ' + data.user.email + '!')

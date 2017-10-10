@@ -16,13 +16,16 @@ const getComments = function (data) {
       for (let i = 0; i < comments.length; i++) {
         let content = JSON.stringify(comments[i].content)
         console.log(content)
-        $('.comments').append('<br><br><div> <h1>Comments</h1><h3>' + content + '</h3></div> <br><br>')
+        $('.comments').append('<br><br><div> <h5>Comments</h5><h3>' + content + '</h3></div> <br><br>')
       }
+
     }
   })
   }
+const makeComment = {
 
-
+}
 module.exports = {
   getComments,
+  makeComment
 }
