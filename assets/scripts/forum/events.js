@@ -7,17 +7,24 @@ const postSubmit = $('#postSubmit').on('click', function() {
   // console.log(posts)
   let headerInput = $('#postHeader').val()
   let bodyInput = $('#postBody').val()
+  $('#postHeader').val('')
+  $('#postBody').val('')
   let data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
-  $('.post').append('<div> <h5>Title:</h5><br><h2> ' + headerInput + '</h2><br>' + '<h5> Post:</h5><br><h3>' + bodyInput + '</h3></div>' + '<br><br>')
-  let formData = JSON.stringify($('.post').data())
-  console.log('Success' + data + "" + "|" + typeof headerInput + "" + "|" + bodyInput)
-  $('.prompt').text('successful post made below').html()
+  $('#makePosts').append('<div> <h5>Title:</h5><br><h2> ' + headerInput + '</h2><br>' + '<h5> Post:</h5><br><h3>' + bodyInput + '</h3></div>' + '<br><br>')
+  let formData = JSON.stringify($('#makePosts').data())
+  // console.log('Success' + data + "" + "|" + typeof headerInput + "" + "|" + bodyInput)
+  // $('.prompt').text('successful post made below').html()
+$(this).formData = (data) => api.posts(postSubmit).find(forumEvent.makePosts(postSubmit)).parseHTML()
+$.post(this).on('click', this).ajaxSend(forumApi.makePosts())
 
+  // console.log(data)
 
 })
 const postDelete = $('#postDelete').on('click', function() {
   let headerInput = $('#postHeader').val()
   let bodyInput = $('#postBody').val()
+  $('#postHeader').val('')
+  $('#postBody').val('')
   let data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
   // $('.post').append('<div> <h2>' + 'Header:' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>' + '<br><br>').empty()
   // $('.prompt').text('deleted all!').html()

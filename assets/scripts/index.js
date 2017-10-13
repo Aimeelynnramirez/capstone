@@ -11,22 +11,16 @@ const commentEvents = require('./comment/events.js');
 const commentsApi = require('./comment/api.js');
 
 $(() => {
-//   forum.forEach(function(posts){
+
 //   // Do some action.
 // });
 
 // $('#posts').on('load', getPosts)
-
-      forumApi.getPosts()
-
-
-
-  commentsApi.getComments()
-
+forumApi.getPosts()
+commentsApi.getComments()
 
 
   // postsEvents.makePosts()
-
   setAPIOrigin(location, config)
   authEvents.addHandlers();
 

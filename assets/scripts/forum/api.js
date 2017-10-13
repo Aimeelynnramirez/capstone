@@ -42,8 +42,8 @@ const makePosts = function (data) {
       for (let i = 0; i < posts.length; i++) {
         var title = JSON.stringify(posts[i].title)
         var body = JSON.stringify(posts[i].body)
-        $('.post').push('<div> <h5>Title:</h5><br><h2> ' + title + '</h2><br>' + '<h5> Post:</h5><br><h3>' + body + '</h3> </div> <br><br>')
-      }
+        $('.post').append('<div> <h5>Title:</h5><br><h2> ' + title + '</h2><br>' + '<h5> Post:</h5><br><h3>' + body + '</h3> </div> <br><br>')
+  console.log(response.posts + ' ' + this.data + ' ' + jqXhr)}
     }
   })
 }
