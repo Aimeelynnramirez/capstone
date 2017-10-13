@@ -8,12 +8,10 @@ const postSubmit = $('#postSubmit').on('click', function() {
   let headerInput = $('#postHeader').val()
   let bodyInput = $('#postBody').val()
   let data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
-  $('.post').prepend('<div> <h2>' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>' + '<br><br>')
+  $('.post').append('<div> <h5>Title:</h5><br><h2> ' + headerInput + '</h2><br>' + '<h5> Post:</h5><br><h3>' + bodyInput + '</h3></div>' + '<br><br>')
   let formData = JSON.stringify($('.post').data())
-  console.log('Success' + data + "" + "|" + headerInput + "" + "|" + bodyInput)
+  console.log('Success' + data + "" + "|" + typeof headerInput + "" + "|" + bodyInput)
   $('.prompt').text('successful post made').html()
-
-
 
 
 })
@@ -21,12 +19,11 @@ const postDelete = $('#postDelete').on('click', function() {
   let headerInput = $('#postHeader').val()
   let bodyInput = $('#postBody').val()
   let data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
-  $('.post').prepend('<div> <h2>' +'Header:'+ headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>').empty()
+  // $('.post').append('<div> <h2>' + 'Header:' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>' + '<br><br>').empty()
   $('.prompt').text(' deleted all').html()
-  $('.post').prepend('<div> <h2>' + headerInput + '</h2>' + '<h3>' + bodyInput + '</h3></div>')
+  $('.post').prepend('<div> <h5>Title:</h5><br><h2> ' + headerInput + '</h2><br>' + '<h5> Post:</h5><br><h3>' + bodyInput + '</h3></div>' + '<br><br>').empty().val()
   $('.prompt').text('Saved on page on while all posts are deleted on DeleteAll').html()
-  $('.post').empty().prepend('<div> <h2>' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>')
-  $('.prompt').text(' deleted all but Input').html()
+  $('.post').prepend('<div> <h5>Title:</h5><br><h2> ' + headerInput + '</h2><br>' + '<h5> Post:</h5><br><h3>' + bodyInput + '</h3></div>' + '<br><br>')&& $('.post').empty().val()
   // $('.post').sort().remove()< deletes all instances after delete button
   // let formData = JSON.stringify($('.post').data()).pop() <copies last post
   let formData = JSON.stringify($('.post').data())
@@ -36,32 +33,6 @@ const postDelete = $('#postDelete').on('click', function() {
 
 
 })
-
-
-// const postOneDelete = $('#postOneDelete').on('click', function() {
-//   let headerInput = $('#postHeader').val()
-//   let bodyInput = $('#postBody').val()
-//
-//   // let data ='{ "title":"' + headerInput +'", "body": "' + bodyInput + '"}'
-//   const data = '{ "title":"' + headerInput + '", "body": "' + bodyInput + '"}'
-//   $('.post').prepend('<div> <h2>' + headerInput + '</h2><br>' + '<h3>' + bodyInput + '</h3></div>'+ '<br><br>').one()
-//   $('.prompt').text(' Update field').html()
-//
-//   // $('.post').sort().remove()< deletes all instances after delete button
-//
-//   // let formData = JSON.stringify($('.post').data()).pop() <copies last post
-//   let formData = JSON.stringify($('.post').data())
-//
-//
-//   console.log('Success on deleted all')
-//
-//
-//
-//
-// })
-//
-// $('#postHeader').val('')
-// $('#postBody').val('')
 
 module.exports = {
   postDelete,

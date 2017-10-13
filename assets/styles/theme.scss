@@ -5,46 +5,7 @@ body {
   height: 70%;
   max-height: 600px;
   font-size: 14px;
-  text-shadow: 1px 3px teal;
-}
-
-.row {
-  text-align: center;
-}
-
-.quotes {
-  position: center;
-  width: 700px;
-  max-width: 100%;
-}
-
-.container-fluid {
-  max-width: 700px;
-}
-
-.board {
-  text-align: center;
-}
-
-.welcome {
-  background: white;
-  color: teal;
-  font-size: 18px;
-  box-shadow: 1px 3px;
-}
-
-.side {
-  background: url('https://i.imgur.com/5dPscuw.jpg');
-  text-align: center;
-  box-shadow: 1px 3px solid black;
-  height: 500px;
-  width: 70%;
-  margin-left: 15%;
-  padding: 5%;
-}
-
-form {
-  box-shadow: 1px 3px solid black;
+  text-shadow: 1px 3px white;
 }
 
 h1 {
@@ -59,12 +20,40 @@ h2 {
 }
 
 h3 {
+  background: white;
   text-align: center;
   position: center;
 
+
+}
+h4 {
+  background: lightpink;
+  border: 2px black;
+  box-shadow: 1px 3px;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  box-shadow: 1px 3px;
+  font-size: 14px;
+  text-shadow: 1px 3px white;
+}
+
+
+.row {
+  text-align: center;
+}
+
+.quotes {
+  position: center;
+  width: 700px;
+  max-width: 100%;
 }
 
 .container-fluid {
+  max-width: 700px;
+  background: white;
   width: 70%;
   text-align: center;
 }
@@ -77,23 +66,32 @@ h3 {
   box-shadow: 1px 3px;
 }
 
+.board {
+  text-align: center;
+}
+
+.welcome {
+  background: white;
+  font-size: 18px;
+  box-shadow: 1px 3px;
+}
+
+.side {
+  background: url('https://i.imgur.com/5dPscuw.jpg');
+  text-align: center;
+  box-shadow: 1px 3px solid black;
+  height: 500px;
+  width: 70%;
+  margin-left: 15%;
+  padding: 5%;
+}
+
+
+
 .prompt {
   background: lightpink;
 }
 
-h4 {
-  background: lightpink;
-  border: 2px black;
-  box-shadow: 1px 3px;
-  width: 100%;
-}
-
-p {
-  text-align: center;
-  box-shadow: 1px 3px;
-  font-size: 14px;
-  text-shadow: 1px 2px teal;
-}
 
 .posts {
   text-align: center;
@@ -117,13 +115,3 @@ p {
   background: white;
   color: black;
 }
-// .nav {
-//   @include make-row();
-//   margin-left: 75%;
-//   .nav-button {
-//     @include make-lg-column(3);
-//     @include make-md-column(3);
-//     @include make-sm-column(3);
-//     @include make-xs-column(3);
-//   }
-// }

@@ -3,11 +3,12 @@
 const setAPIOrigin = require('../../lib/set-api-origin')
 const config = require('./config')
 const authEvents = require('./auth/events.js');
-const forumEvents = require('./forum/api.js');
+const forumApi = require('./forum/api.js');
 
-const forumEvent = require('./forum/events.js');
+const forumEvents = require('./forum/events.js');
+const commentEvents = require('./comment/events.js');
 
-const commentsEvents = require('./comment/api.js');
+const commentsApi = require('./comment/api.js');
 
 $(() => {
 //   forum.forEach(function(posts){
@@ -16,12 +17,11 @@ $(() => {
 
 // $('#posts').on('load', getPosts)
 
-    forumEvents.makePosts()
-      forumEvents.getPosts()
+      forumApi.getPosts()
 
 
 
-  commentsEvents.getComments()
+  commentsApi.getComments()
 
 
 
