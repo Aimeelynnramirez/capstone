@@ -17,7 +17,7 @@ const getPosts = function (data) {
         var title = JSON.stringify(posts[i].title)
         var body = JSON.stringify(posts[i].body)
         // console.log(title + ' | ' + body)
-        $('.posts').append('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> <br> <br> <button type="button" class="btn  btn-lg center">Delete</button> </div> <br><br>')
+        $('.post').append('<div> <h5>Title:</h5><br><h2> ' + title + '</h2><br>' + '<h5> Post:</h5><br><h3>' + body + '</h3> </div> <br><br>')
       }
     }
   })
@@ -42,7 +42,7 @@ const makePosts = function (data) {
       for (let i = 0; i < posts.length; i++) {
         var title = JSON.stringify(posts[i].title)
         var body = JSON.stringify(posts[i].body)
-        $('.posts').push('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> </div> <br><br>')
+        $('.post').push('<div> <h5>Title:</h5><br><h2> ' + title + '</h2><br>' + '<h5> Post:</h5><br><h3>' + body + '</h3> </div> <br><br>')
       }
     }
   })
@@ -60,7 +60,7 @@ const deletePosts = function (data) {
       for (let i = 0; i < posts.length; i++) {
         var title = JSON.stringify(posts[i].title)
         var body = JSON.stringify(posts[i].body)
-        $('.post').pop('<div> <h2>' + title + '</h2><br> <h3>' + body + '</h3> </div> <br><br>')
+        $('.post').pop('<div> <h5>Title:</h5><br><h2> ' + title + '</h2><br>' + '<h5> Post:</h5><br><h3>' + body + '</h3> </div> <br><br>')
       }
     }
   })

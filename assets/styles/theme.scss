@@ -1,28 +1,40 @@
 body {
-  background: lightyellow;
-  text-align: justify;
+ background: url('https://i.imgur.com/Uup339g.jpg');
+color: black;
+  text-align: fit;
   width: 100%;
   height: 70%;
   max-height: 600px;
-  font-size: 14px;
-  text-shadow: 1px 3px white;
+  font-size: 17px;
+  border-radius: 1% 3%;
+  border: 1px grey;
+  text-shadow: 1px .5px 2px grey;
 }
 
 h1 {
   text-align: center;
+  background: white;
   position: center;
-  border: 2px black;
-  box-shadow: 1px 3px;
+  border: 2px #DB7093;
+box-shadow: 1px 3px solid black;
+  color: black;
 }
 
 h2 {
   text-align: center;
+  background: white;
+  color: black;
+
 }
 
 h3 {
-  background: white;
   text-align: center;
   position: center;
+  border-radius: 1% 3%;
+  border: 1px grey;
+  background: white;
+  color: black;
+
 
 
 }
@@ -31,73 +43,109 @@ h4 {
   border: 2px black;
   box-shadow: 1px 3px;
   width: 100%;
+  text-align :center;
+  color: black;
+}
+
+h5 {
+  text-align :center;
+  background: white;
+  color: black;
+
 }
 
 p {
   text-align: center;
-  box-shadow: 1px 3px;
-  font-size: 14px;
-  text-shadow: 1px 3px white;
+  box-shadow: 1px 3px solid black;
+  color: black;
 }
 
-
+.commentAlert {
+  background: white;
+  color:black;
+}
 .row {
   text-align: center;
+  background: white;
+  color: black;
+
+
 }
 
 .quotes {
   position: center;
   width: 700px;
+  color: black;
   max-width: 100%;
 }
 
 .container-fluid {
-  max-width: 700px;
   background: white;
+  max-width: 700px;
+  position: center;
+  color: black;
   width: 70%;
   text-align: center;
+  border: 2px #DB7093;
 }
 
 .comments {
   text-align: center;
   background: white;
-  width: 70%;
-  border: 2px black;
-  box-shadow: 1px 3px;
+  width: 100%;
+  color: black;
+
 }
 
 .board {
   text-align: center;
+  color: black;
 }
 
 .welcome {
-  background: white;
+  background: yellow;
+  color: black;
   font-size: 18px;
-  box-shadow: 1px 3px;
+  box-shadow: 1px 3px solid black;
+
 }
 
 .side {
-  background: url('https://i.imgur.com/5dPscuw.jpg');
+  background: white;
+  color: black;
   text-align: center;
-  box-shadow: 1px 3px solid black;
   height: 500px;
   width: 70%;
   margin-left: 15%;
   padding: 5%;
+  border-radius: 1% 3%;
+  border: 1px grey;
 }
 
 
 
 .prompt {
-  background: lightpink;
+  background: yellow;
+  border: 1px grey;
+
+
+}
+.prompts {
+  background: yellow;
+  border: 1px grey;
+
+
+
+
 }
 
-
 .posts {
+  color: black;
   text-align: center;
-  background: pink;
   width: 100%;
   height: 100%;
+  background: white;
+
 }
 
 #postsContainer {
@@ -109,6 +157,7 @@ p {
 
 #sign-in {
   width: 100%;
+
 }
 
 #posts {
