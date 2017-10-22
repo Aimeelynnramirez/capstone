@@ -1,211 +1,178 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-      <title>{Root}.ed</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-      <!-- Do not add `link` tags unless you know what you are doing -->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>{Root}.ed</title>
 
-      <!-- Do not add `script` tags unless you know what you are doing -->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
-      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <!-- Do not add `link` tags unless you know what you are doing -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+  <!-- Do not add `script` tags unless you know what you are doing -->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
-        </head>
-            <body>
-
-          <div class="container-fluid">
-            <!-- nav -->
-            Capstone.
-
-            <div class="logo"><div class="side">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
 
 
+</head>
 
-              <h3> {Root}.ed </h3>
-                <p>is an agenda app daily with daily feed</p><br>
-                <p>
-               <br> |Blog| <br>|PinterestAPI| <br>|HerokuAPI|
-             <h5> (use as a NoteBook/Notepad? however! just here to keeping you motivated during a daily post!)</h6>
-           <br> Cheers.
-          </p></div></div> </p>
+<body>
+  <div class="container-fluid">
+    <!-- NAV -->
+    Capstone.
+<br>
+    <!-- NAV END -->
+    <!-- HOME BODY -->
+    <a href="https://imgur.com/wZKI2UZ"><img src="https://i.imgur.com/wZKI2UZm.jpg" title="source: imgur.com" /></a>
 
+    <div class="side">
 
-            <article>
-          <form id="sign-out">
-              <fieldset>
-                <legend>Sign Out!</legend>
-                <form method="get" action="/sign-out">
-                  <button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
-              </fieldset>
-              </form>
-            </article>
-            <div class="welcome"></div>
-            <div id="welcome"></div>
-
-            <article>
-            <h3 id="sign-up">New Member?
-
-              <form id="sign-up">
-                <fieldset>
-
-                    <legend>Sign up!</legend>
-                    <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
-                    <label for="email" data-error="wrong" data-success="right">Email</label>
-                    <input type="password" name="credentials[password]" placeholder="Password">
-                    <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-                    <input type="submit" name="submit" value="Sign up!"  class="btn btn-secondary">
-                </fieldset>
-              </form>
-            <h3 id="sign-in">Already a Member?
-
-              <form id="sign-in">
-                <fieldset>
-
-                  <!-- <div class="container row s12"> -->
-                    <legend> Sign-In</legend>
-                    <input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
-                    <label for="email" data-error="wrong" data-success="right">Email</label>
-                    <input type="password" name="credentials[password]" placeholder="Password">
-                    <input type="submit" name="submit" value="Sign In"  class="btn btn-secondary">
-                </fieldset>
-              </form><div class="row"></h3>
-              <form id="change-password">
-
-
-              <fieldset>
-                    <legend>Change Password!</legend>
-                    <input type="password" name="passwords[old]" placeholder="Current Password">
-                    <input type="password" name="passwords[new]" placeholder="New Password">
-                    <input type="submit" name="submit" value="Change Password" class="btn btn-secondary">
-                </fieldset>
-              </form>
-
-
-            </article>
-            <div class = "quotes">
-            <h3> News</h3>
-            <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/official-news/"></a>
-            </div>
-
-            <div class = "board">
-
-
-                        <h4> Pinterest</h4>
-                      <div class="col-md-4">
-                        <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/aimeelramirez/board/"></a>
-                        <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/street-style/"></a>
-
-                        <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
+        <h3> {Root}.ed </h3>
+        <p>Forum/Personal Blog</p><br>
+        <p> update daily with daily feed</p><br>
+<br> Cheers.
+</p></div> </p>
+<!-- HOME BODY END-->
+<!-- FORMDATA BODY -->
+<div class="logo">
+<article>
+<form id="sign-out">
+<fieldset>
+<legend>Sign Out!</legend>
+<form method="get" action="/sign-out">
+<button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
+</fieldset>
+</form>
+</article>
+<!-- prompt for in greetings -->
+<div class="welcome"></div>
+<div id="welcome"></div>
+<!-- prompt for in greetings ENDs-->
+<article>
+<h3 id="sign-up">New Member?
+<form id="sign-up">
+<fieldset>
+<legend>Sign up!</legend>
+<input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+<label for="email" data-error="wrong" data-success="right">Email</label>
+<input type="password" name="credentials[password]" placeholder="Password">
+<input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+<input type="submit" name="submit" value="Sign up!"  class="btn btn-secondary">
+</fieldset>
+</form>
+<h3 id="sign-in">Already a Member?
+<form id="sign-in">
+<fieldset>
+<legend> Sign-In</legend>
+<input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+<label for="email" data-error="wrong" data-success="right">Email</label>
+<input type="password" name="credentials[password]" placeholder="Password">
+<input type="submit" name="submit" value="Sign In"  class="btn btn-secondary">
+</fieldset>
+</form><div class="row"></h3>
+<form id="change-password">
+<fieldset>
+<legend>Change Password!</legend>
+<input type="password" name="passwords[old]" placeholder="Current Password">
+<input type="password" name="passwords[new]" placeholder="New Password">
+<input type="submit" name="submit" value="Change Password" class="btn btn-secondary">
+</fieldset>
+</form>
+</article>
 </div>
-<h3>    Currently Under Construction.</h3>
+<!-- FORMDATA BODY END-->
+<!-- NEWSFEED BODY HOMEPAGE-->
+
+<div class = "quotes">
+<h3> News</h3>
+<a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/official-news/"></a>
+</div>
+<!-- NEWSFEED BODY HOMEPAGE END-->
+<!--*offical HOMEPAGE after signUp || signIn*-->
+
+<!-- USERSFEED BODY -->
+<!-- TODO make board personal to auth -->
+<div class = "board">
+<h4> Pinterest</h4>
+<div class="col-md-4">
+<a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/aimeelramirez/board/"></a>
+<a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/street-style/"></a>
+<a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
+</div>
+<h3> Currently Under Construction.</h3>
 <li>Below you see the post and comments! make and create posts by typing in text area below! </li>
 <li>Enjoy viewing the pinterest api with all current feed persisting. </li>
 <li>TODO make sure all data recorded.</li>
 <li> Checkout "View Comments" hidden below! </li>
 
 </div>
-
+<!-- COMMENT BODY -->
 <h4>Comments</h4>
-
-                          <div class="col-md-8">
-                            <div class="pos-f-t">
-                              <div class="collapse" id="navbarToggleExternalContent">
-                                <div class="bg-dark p-4">
-                                  <span class="text-muted">
-
-
-
-                                  <!-- prompts for comment -->
-
-                                  <div class="commentAlert"></div>
-                                  <div class='prompts'></div>
-                                  <div id="prompt"></div>
-
-                                              <div class="comments" id="comments" ></div>
-
-                                              <h3>Comment Here</h3>
-
-                                  <h5></h5>
-
-                                              <input id="commentContent" >
-                                              <input id="commentSubmit" type="submit" name="submit" value="Send"  class="btn btn-secondary">
-
-                                  <input id="commentsDelete" type="submit" name="submit" value="Delete All" class="btn btn-secondary"></span>
-                                </div>
-                              </div>
-                              <nav class="navbar navbar-dark bg-dark">
-                                <button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                                  <span class="navbar-toggler-icon "> View Comments</span>
-                                </button>
-                              </nav>
-                            </div>
-
-
-          </div>
-
-          <div class="row">
-            <h4>Blog</h4>
-
-            <div id= "posts">
-
-
-              <h3>Title:</h3>
-
-
-              <input id="postHeader">
-              <br>
-              <h3>Post:</h3>
-              <input id="postBody">
-              <input id="postSubmit" type="submit" name="submit" value="Posts" class="btn btn-secondary">
-              <input id="postDelete" type="submit" name="submit" value="DeleteAll" class="btn btn-secondary">
-              <!-- <input id="postOneDelete" type="submit" name="submit" value="Edit" class="btn-large"> -->
-            </div>
-
-            <div class= "makePosts" id ="makePosts"> </div>
-
-            <h4>Posts</h4>
-
+<div class="col-md-8">
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <span class="text-muted">
+      <!-- prompts for comment -->
+      <div class="commentAlert"></div>
+      <div class='prompts'></div>
+      <div id="prompt"></div>
+      <!-- prompts for comment END -->
+                  <div class="comments" id="comments" ></div>
+                  <h3>Comment Here</h3>
+                  <!-- TODO h5 tags for placeholder change...maybe-->
+                  <h5></h5>
+          <input id="commentContent">
+          <input id="commentSubmit" type="submit" name="submit" value="Send" class="btn btn-secondary">
+          <input id="commentsDelete" type="submit" name="submit" value="Delete All" class="btn btn-secondary"></span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "> View Comments</span>
+    </button>
+    </nav>
+  </div>
+  </div>
+  <!-- COMMENT BODY END -->
+  <!-- POST BODY -->
+  <div class="row">
+    <h4>Blog</h4>
+    <div id="posts">
+      <h3>Title:</h3>
+      <input id="postHeader">
+      <br>
+      <h3>Post:</h3>
+      <input id="postBody">
+      <input id="postSubmit" type="submit" name="submit" value="Posts" class="btn btn-secondary">
+      <input id="postDelete" type="submit" name="submit" value="DeleteAll" class="btn btn-danger">
+      <input id="postOneDelete" type="submit" name="submit" value="DeleteOne" class="btn btn-danger">
+    </div>
+    <h4>Posts</h4>
     <!-- prompts for post -->
-            <div class='prompt'></div>
-          </div>
-           <div class='post'></div>
-
-
-       <div class="posts" id="postsContainer">
-          <div id="postsList" class="col-md-12">
-           </div>
-            </div>
-
-<!-- random news public pinterest feed  -->
-<div class = "signoutBottom">
-  <article>
+    <div class='prompt'></div>
+  </div>
+  <div class='post' id='post'></div>
+  <div class="posts" id="postsContainer">
+    <div id="postsList" class="col-md-12">
+    </div>
+  </div>
+  <!-- POST BODY -->
+  <!-- random news public pinterest feed  -->
+  <div class="signoutBottom">
+    <article>
       <legend>Sign Out!</legend>
-        <button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
-  </article>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-</br>
-
-
-    </body>
+      <button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
+    </article>
+  </div>
+  </div>
+<!-- USERSFEED BODY END -->
+  </div>
+  </br>
+</body>
 </html>
