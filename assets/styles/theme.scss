@@ -1,9 +1,10 @@
 body {
  background: url('https://i.imgur.com/Uup339g.jpg');
-  color: black;
+color: black;
   text-align: fit;
   width: 100%;
-  height: 100%;
+  height: 70%;
+  max-height: 600px;
   font-size: 17px;
   border-radius: 1% 3%;
   border: 1px grey;
@@ -13,8 +14,6 @@ body {
 h1 {
   text-align: center;
   background: white;
-  width: 100%;
-  height:100%;
   position: center;
   border: 2px #DB7093;
 box-shadow: 1px 3px solid black;
@@ -101,7 +100,6 @@ p {
 .board {
   text-align: center;
   color: black;
-  display: flex;
 }
 
 .welcome {
@@ -113,30 +111,17 @@ p {
 }
 
 .side {
-  background: grey;
+  background: white;
   color: black;
   text-align: center;
-  height: 100%;
-  width: 50%;
-  border-radius: 1% 3%;
-  border: 1px grey;
-
-}
-.logo {
-  color: black;
-  display: flex 1 ;
-  text-align: center;
-  height: 30%;
-  width: 20%;
-  padding: 20%;
+  height: 500px;
+  width: 70%;
+  margin-left: 15%;
+  padding: 5%;
   border-radius: 1% 3%;
   border: 1px grey;
 }
-.box {
-  display: flex ;
-  text-align: center;
 
-}
 
 
 .prompt {
