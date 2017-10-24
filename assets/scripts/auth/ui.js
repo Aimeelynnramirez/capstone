@@ -41,12 +41,11 @@ const failure = (error) => {
 const signInSuccess = (data) => {
   app.user = data.user;
   $('.welcome').text('Welcome Back' + '"' + data.user.email + '"' )
-  $('.prompt').text('Please click on Delete All to make brand new posts')
-  $('.prompts').text('Please click on Delete All to make brand new posts')
 
   console.log('Success')
-
-    $('h4').show();
+  $('.prompt').text('Please click on Delete All to make brand new posts')
+  $('.prompts').text('Please click on Delete All to make brand new posts')
+  $('h4').show();
   $('.signoutBottom').show();
   $('#sign-up').hide();
   $('#sign-in').hide();
@@ -82,6 +81,8 @@ $('h4').show();
  // console.log(app.user);
 };
 const signOutSuccess = () => {
+  $('.welcome').text('Come again soon!')
+
   console.log('User signed out successfully');
   $('#posts').show()
 
