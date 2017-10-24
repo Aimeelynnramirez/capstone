@@ -9,7 +9,6 @@ const postSubmit = $(' #postSubmit').on('click' , function() {
   // console.log(posts)
   let headerInput = $('#postHeader').val()
   let bodyInput = $('#postBody').val()
-
   $('#postHeader').val('')
   $('#postBody').val('')
   let data = '{"post": {"title":"' + headerInput + '", "body": "' + bodyInput + '"}}'
