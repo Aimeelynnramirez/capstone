@@ -39,7 +39,7 @@ h3 {
 
 }
 h4 {
-  background: lightpink;
+  background: $light-pink;
   border: 2px black;
   box-shadow: 1px 3px;
   width: 100%;
@@ -86,7 +86,7 @@ p {
   color: black;
   width: 70%;
   text-align: center;
-  border: 2px #DB7093;
+  border: 2px $light-pink;
 }
 
 .comments {
@@ -124,7 +124,7 @@ p {
 
 .welcome{
   text-align: center;
-  background: pink;
+  background: $light-pink;
 }
 
 .prompt {

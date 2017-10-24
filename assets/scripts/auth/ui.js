@@ -11,7 +11,6 @@ $('#post').hide();
 $('h4').hide();
 $('.posts').hide();
 $('.signoutBottom').hide();
-
 $('.board').hide();
 $('.comments').hide();
 
@@ -51,7 +50,6 @@ const signInSuccess = (data) => {
   $('#sign-in').hide();
   $('#sign-out').show();
   $('#postsContainer').show();
-  $('.logo').hide()
   $('.side').hide()
   $('.comments').show();
   $('#posts').show();
