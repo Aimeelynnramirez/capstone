@@ -39,7 +39,7 @@ const failure = (error) => {
 };
 
 const signInSuccess = (data) => {
-  app.user = data.user;
+
   $('.welcome').text('Welcome Back' + '"' + data.user.email + '"' )
 
   console.log('Success')
