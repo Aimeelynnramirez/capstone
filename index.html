@@ -28,45 +28,31 @@
 <br>
     <!-- NAV END -->
     <!-- HOME BODY -->
+    <a href="https://imgur.com/wZKI2UZ"><img src="https://i.imgur.com/wZKI2UZm.jpg" title="source: imgur.com" /></a>
 
     <div class="side">
 
-        <h3> {Root}.edU </h3>
-        <p>Root yourself in daily application in a app!</p><br>
+        <h3> {Root}.ed </h3>
         <p>Forum/Personal Blog</p><br>
-        <p>Write out your day here! </p><br>
-
-        <p>Update daily with daily feed</p><br>
-  <p>Cheers.</p><br>
-
-
+        <p> update daily with daily feed</p><br>
+<br> Cheers.
+</p></div> </p>
 <!-- HOME BODY END-->
-
-
-
-
-
-        <!-- FORMDATA BODY -->
-        <article>
-        <form id="sign-out">
-        <fieldset>
-        <legend>Sign Out!</legend>
-        <form method="get" action="/sign-out">
-        <button type="sign-out" name="submit" value="sign-out" class="btn btn-danger" onclick="history.go(0)" /> Sign-out </button>
-        </fieldset>
-        </form>
-        </article>
-
-      </div>
-
-      <div class="logo">
-    <a href="https://imgur.com/wZKI2UZ"><img src="https://i.imgur.com/wZKI2UZm.jpg" title="source: imgur.com" /></a>
-    </div>
+<!-- FORMDATA BODY -->
+<div class="logo">
+<article>
+<form id="sign-out">
+<fieldset>
+<legend>Sign Out!</legend>
+<form method="get" action="/sign-out">
+<button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
+</fieldset>
+</form>
+</article>
 <!-- prompt for in greetings -->
 <div class="welcome"></div>
 <div id="welcome"></div>
 <!-- prompt for in greetings ENDs-->
-<div class="box">
 <article>
 <h3 id="sign-up">New Member?
 <form id="sign-up">
@@ -88,7 +74,7 @@
 <input type="password" name="credentials[password]" placeholder="Password">
 <input type="submit" name="submit" value="Sign In"  class="btn btn-secondary">
 </fieldset>
-</form></h3>
+</form><div class="row"></h3>
 <form id="change-password">
 <fieldset>
 <legend>Change Password!</legend>
@@ -98,15 +84,12 @@
 </fieldset>
 </form>
 </article>
-
-
 </div>
 <!-- FORMDATA BODY END-->
-
 <!-- NEWSFEED BODY HOMEPAGE-->
 
 <div class = "quotes">
-<h3> News Pinterest API</h3>
+<h3> News</h3>
 <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/official-news/"></a>
 </div>
 <!-- NEWSFEED BODY HOMEPAGE END-->
@@ -117,6 +100,7 @@
 <div class = "board">
 <h4> Pinterest</h4>
 <div class="col-md-4">
+<a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/aimeelramirez/board/"></a>
 <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/street-style/"></a>
 <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
 </div>
@@ -127,7 +111,35 @@
 <li> Checkout "View Comments" hidden below! </li>
 
 </div>
-
+<!-- COMMENT BODY -->
+<h4>Comments</h4>
+<div class="col-md-8">
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <span class="text-muted">
+      <!-- prompts for comment -->
+      <div class="commentAlert"></div>
+      <div class='prompts'></div>
+      <div id="prompt"></div>
+      <!-- prompts for comment END -->
+                  <div class="comments" id="comments" ></div>
+                  <h3>Comment Here</h3>
+                  <!-- TODO h5 tags for placeholder change...maybe-->
+                  <h5></h5>
+          <input id="commentContent">
+          <input id="commentSubmit" type="submit" name="submit" value="Send" class="btn btn-secondary">
+          <input id="commentsDelete" type="submit" name="submit" value="Delete All" class="btn btn-secondary"></span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "> View Comments</span>
+    </button>
+    </nav>
+  </div>
+  </div>
+  <!-- COMMENT BODY END -->
   <!-- POST BODY -->
   <div class="row">
     <h4>Blog</h4>
@@ -161,13 +173,6 @@
   </div>
 <!-- USERSFEED BODY END -->
   </div>
-  </div>
-</nav>
-</div>
-</div>
-</div>
-<!-- COMMENT BODY END -->
-
   </br>
 </body>
 </html>
