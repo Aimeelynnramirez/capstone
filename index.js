@@ -5,7 +5,7 @@
 
 // load manifests
 // scripts
-require('./assets/scripts/index.js')
+// const index = require('./assets/scripts/index.js')
 
-// styles
-require('./assets/styles/index.scss')
+// // styles
+// const styles = require('./assets/styles/index.css')
