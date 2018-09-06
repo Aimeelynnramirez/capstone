@@ -1,6 +1,7 @@
-@import 'theme';
-@import 'color';
-@import 'typography';
+/*@import "~bootstrap/scss/bootstrap";
+ @import './theme';
+@import './color'; */
+
 
 
 body {
