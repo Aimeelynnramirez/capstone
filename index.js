@@ -1,7 +1,7 @@
 'use strict'
 
 window.onload = function () {
-    var $ = require("jquery");
+    var $ = require("jQuery");
 
     
     const index = require('./assets/scripts/index.js')
