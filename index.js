@@ -1,4 +1,5 @@
 'use strict'
+var $ = require("jquery");
 
 $(function() {
     const index = require('./assets/scripts/index.js')
