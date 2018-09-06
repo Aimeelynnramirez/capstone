@@ -46,13 +46,12 @@ h2 {
 }
 
 h3 {
- display: relative;
-  text-align: center;
+
   border-radius: 1% 3%;
   border: 1px rgb(15, 11, 11);
   background: white;
   color: black;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 h4 {
@@ -128,14 +127,13 @@ p {
 
 }
 
-.side {
+article {
   background: white;
   color: black;
   text-align: center;
-  height: 500px;
   width: 70%;
-  margin-left: 15%;
-  padding: 5%;
+  margin:auto;
+  padding-left: 20%;
   border-radius: 1% 3%;
   border: 1px grey;
 }
