@@ -2,8 +2,7 @@
 
 const config = {
   apiOrigins: {
-    production: 'https://finance-template.herokuapp.com'
-
+    production: 'https://backendcapstone.herokuapp.com'
      //production: 'http://localhost:4741'
   }
 }
