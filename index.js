@@ -1,12 +1,8 @@
 'use strict'
 
 window.onload = function () {
-    var $ = require("jQuery");
-
-    
-    const index = require('./assets/scripts/index.js')
+   const index = require('./assets/scripts/index.js')
     const styles = require('./assets/styles/index.css')
-    const jQuery = require('./jquery.min-3.3.1.js')
 
 };
 
