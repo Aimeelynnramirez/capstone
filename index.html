@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>{Root}.ed</title>
+  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+  <script defer src='https://requirejs.org/docs/release/2.3.6/minified/require.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/wZKI2UZm.jpg">
+  <script src="public/jquery.min-3.3.1.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/index.css" />
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!-- NAV -->
+    Capstone.
+<br>
+    <!-- NAV END -->
+    <!-- HOME BODY -->
+    <div id="images-fulid">
+    <a href="https://imgur.com/wZKI2UZ"><img src="https://i.imgur.com/wZKI2UZm.jpg" title="source: imgur.com" /></a>
+  </div>
+    <div class="side">
+
+        <h3> {Root}.ed </h3>
+        <p>Forum/Personal Blog</p><br>
+        <p> update daily with daily feed</p><br>
+<br> Cheers!
+</div>
+<!-- HOME BODY END-->
+<!-- FORMDATA BODY -->
+<div id="welcome" class="welcome"></div>
+<div class="logo">
+<article>
+<form id="sign-out">
+<fieldset>
+<legend>Sign Out!</legend>
+<form method="get" action="/sign-out">
+<button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
+</fieldset>
+</form>
+</article>
+<!-- prompt for in greetings -->
+
+<!-- prompt for in greetings ENDs-->
+<article>
+<h3 id="sign-up">
+<form id="sign-up">
+<fieldset>
+<legend>Sign up!</legend>
+<input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+<label for="email" data-error="wrong" data-success="right">Email</label>
+<input type="password" name="credentials[password]" placeholder="Password">
+<input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+<input type="submit" name="submit" value="Sign up!"  class="btn btn-secondary">
+</fieldset>
+</form>
+<h3 id="sign-in">
+<form id="sign-in">
+<fieldset>
+<legend> Sign-In</legend>
+<input id="email" name="credentials[email]" type="email" placeholder="Email" class="validate">
+<label for="email" data-error="wrong" data-success="right">Email</label>
+<input type="password" name="credentials[password]" placeholder="Password">
+<input type="submit" name="submit" value="Sign In"  class="btn btn-secondary">
+</fieldset>
+</form><div class="row"></h3>
+<form id="change-password">
+<fieldset>
+<legend>Change Password!</legend>
+<input type="password" name="passwords[old]" placeholder="Current Password">
+<input type="password" name="passwords[new]" placeholder="New Password">
+<input type="submit" name="submit" value="Change Password" class="btn btn-secondary">
+</fieldset>
+</form>
+</article>
+</div>
+<!-- FORMDATA BODY END-->
+<!-- NEWSFEED BODY HOMEPAGE-->
+
+<div class = "quotes">
+<h3> News</h3>
+<a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/official-news/"></a>
+</div>
+<!-- NEWSFEED BODY HOMEPAGE END-->
+<!--*offical HOMEPAGE after signUp || signIn*-->
+<!-- COMMENT BODY -->
+<h4>Comments</h4>
+<div class="col-md-8">
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <span class="text-muted">
+      <!-- prompts for comment -->
+      <div class="commentAlert"></div>
+      <div class='prompts'></div>
+      <div id="prompt"></div>
+      <!-- prompts for comment END -->
+                  <div class="comments" id="comments" ></div>
+                  <h3>Comment Here</h3>
+                  <!-- TODO h5 tags for placeholder change...maybe-->
+                  <h5></h5>
+          <input id="commentContent">
+          <input id="commentSubmit" type="submit" name="submit" value="Send" class="btn btn-secondary">
+          <input id="commentsDelete" type="submit" name="submit" value="Delete All" class="btn btn-secondary"></span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler btn btn-secondary" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "> View Comments</span>
+    </button>
+    </nav>
+  </div>
+  </div>
+  <!-- COMMENT BODY END -->
+  <!-- POST BODY -->
+  <div class="row">
+    <h4>Blog</h4>
+    <div id="posts">
+      <h3>Title:</h3>
+      <input id="postHeader">
+      <br>
+      <h3>Post:</h3>
+      <input id="postBody">
+      <input id="postSubmit" type="submit" name="submit" value="Posts" class="btn btn-secondary">
+      <input id="postDelete" type="submit" name="submit" value="DeleteAll" class="btn btn-danger">
+      <input id="postOneDelete" type="submit" name="submit" value="DeleteOne" class="btn btn-danger">
+    </div>
+    <h4>Posts</h4>
+    <!-- prompts for post -->
+    <div class='prompt'></div>
+  </div>
+  <div class='post' id='post'></div>
+  <div class="posts" id="postsContainer">
+    <div id="postsList" class="col-md-12">
+    </div>
+  </div>
+  <!-- POST BODY END -->
+  <!-- TODO make board personal to auth -->
+  <!-- random public pinterest feed  -->
+  <div class = "board">
+  <h4> Pinterest</h4>
+  <div class="col-md-4">
+  <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/aimeelramirez/board/"></a>
+  <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/street-style/"></a>
+  <a data-pin-do="embedBoard" data-pin-board-width="100" data-pin-scale-height="100" data-pin-scale-width="10" href="https://www.pinterest.com/pinterest/parenting-hacks/"></a>
+  </div>
+  <h3> Currently Under Construction.</h3>
+  <li>Above you see the post and comments! </li>
+  <li>Make and create posts by typing in text area below! </li>
+  <li>Enjoy viewing the Pinterest 3rd Party API with all current feed persisting. </li>
+  <li> Checkout "View Comments" hidden on click! </li>
+  <li> Thanks again! Come again soon! </li>
+
+  </div>
+  <div class="signoutBottom">
+    <article>
+      <legend>Sign Out!</legend>
+      <button type="sign-out" name="submit" value="sign-out" class="btn btn-secondary" onclick="history.go(0)" /> Sign-out </button>
+    </article>
+  </div>
+
+
+    </div>
+<!-- USERSFEED BODY END -->
+  </div>
+  </br>
+</body>
+</html>
