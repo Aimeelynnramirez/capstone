@@ -4,5 +4,7 @@ CAPSTONE 2017
 backend capstone: 
 https://backendcapstone.herokuapp.com/posts
 
-Cloud based:
-ec2-50-17-231-192.compute-1.amazonaws.com
+Old Batch capstone:
+https://reactdemocap.herokuapp.com/
+
+
